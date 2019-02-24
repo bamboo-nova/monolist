@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
       
       results.each do |result|
         item = Item.new(read(result))
-        @item << item
+        @items << item
       end
     end
   end
